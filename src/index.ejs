@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<main>
+    <div class="jumbotron">
+        <h1>This is great</h1>
+        <p>Welcome to templating using EJS</p>
+        <div class="list-group">
+            <% staffs.forEach(function(link) { %>
+                <p> <%= link.HOTEN %></p>
+            <% }); %>
+        </div>
+        <table>
+            <tr>
+                <% staffs.forEach(function(staff) { %>
+                    <td> <%= staff.HOTEN %></td>
+                <% }); %>
+            </tr>
+        </table>
+    </div>
+</main>
+
+</html>
